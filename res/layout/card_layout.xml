@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:card="http://schemas.android.com/apk/res-auto"
+	style="@style/card"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+	<it.gmariotti.cardslib.library.view.component.CardShadowView
+		style="@style/card.shadow_outer_layout"
+		android:id="@+id/card_shadow_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:id="@+id/card_main_layout"
+			style="@style/card.main_layout"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<it.gmariotti.cardslib.library.view.component.CardHeaderView
+				style="@style/card.header_outer_layout"
+				android:id="@+id/card_header_layout"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:orientation="horizontal">
+
+				<it.gmariotti.cardslib.library.view.component.CardThumbnailView
+					style="@style/card_thumbnail_outer_layout"
+					android:id="@+id/card_thumbnail_layout"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="top|center"
+					android:paddingBottom="@dimen/card_header_simple_title_margin_left"
+					android:paddingTop="5dp"
+					
+					android:paddingLeft="@dimen/card_header_simple_title_margin_left"/>
+			 
+			 
+				<FrameLayout
+            android:id="@+id/card_main_content_layout"
+            style="@style/card.content_outer_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/card_header_simple_title_margin_left"
+            android:paddingBottom="@dimen/card_header_simple_title_margin_left">
+           <TextView 
+                android:layout_width="wrap_content"
+          		android:layout_height="wrap_content"
+                android:id="@+id/card_main_inner_simple_title"
+                 />
+            </FrameLayout>
+
+			</LinearLayout>
+
+			<FrameLayout
+				android:id="@+id/card_content_expand_layout"
+				style="@style/card.main_layout"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+			</FrameLayout>
+
+		</LinearLayout>
+
+		<View
+			android:layout_height="2dp"
+			android:background="@android:color/transparent"
+			android:layout_width="match_parent"
+			android:layout_gravity="bottom"/>
+
+	</LinearLayout>
+
+	<ImageView
+		android:id="@+id/card_star"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:src="@drawable/ic_action_rating_important"
+		android:layout_gravity="bottom|right"
+		android:visibility="invisible"/>
+
+</FrameLayout>
+
