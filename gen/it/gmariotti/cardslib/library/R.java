@@ -146,11 +146,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static int quarterlylogo=0x7f020015;
         public static int star_off=0x7f020016;
         public static int star_on=0x7f020017;
-        public static int undobar=0x7f020018;
-        public static int undobar_button_focused=0x7f020019;
-        public static int undobar_button_pressed=0x7f02001a;
-        public static int undobar_divider=0x7f02001b;
-        public static int vaio=0x7f02001c;
+        public static int star_on_blue=0x7f020018;
+        public static int undobar=0x7f020019;
+        public static int undobar_button_focused=0x7f02001a;
+        public static int undobar_button_pressed=0x7f02001b;
+        public static int undobar_divider=0x7f02001c;
+        public static int vaio=0x7f02001d;
     }
     public static final class id {
         public static int add=0x7f0a0002;
