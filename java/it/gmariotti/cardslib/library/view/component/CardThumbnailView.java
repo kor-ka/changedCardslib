@@ -339,6 +339,7 @@ public class CardThumbnailView extends FrameLayout implements CardViewInterface 
             return BitmapFactory.decodeStream(new URL(resUrl).openStream());
 
         }catch (IOException ioe){
+        	ioe.printStackTrace();
             //Url not available
             //ioe.printStackTrace();
             Log.w("CardThumbnailView","Error while retrieving image",ioe);
